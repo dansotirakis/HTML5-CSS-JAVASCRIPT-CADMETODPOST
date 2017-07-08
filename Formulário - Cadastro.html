@@ -1,37 +1,43 @@
 <!DOCTYPE html>
-    <meta charset="utf-8" />
-    <title
-    <html>
-    <head>
-        <meta charset="utf-8" />
-        <title>Estilizando formulários com CSS - DevMedia</title>
-    </head>
-    <body>
-    <form name="meuForm" method="post" id="formulario">
-        <div class="box">
-            <h1>Formulario de Contato :</h1>
+<meta charset="utf-8" />
+<html>
+<header class="container div">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../CSS/Reset.css">
+    <link rel="stylesheet" href="../CSS/Index.css">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="../CSS/Mobile.css" media="(max-width: 939px)">
 
-            <label>
-                <span>Nome Completo</span>
-                <input type="text" class="input_text" name="nome" id="name"/>
+    <title>Cadastro</title>
+    <h1>Formulário de Cadastro :</h1>
 
-            </label>
-            <label>
+    <nav class="naveg" >
+
+    </nav>
+</header>
+<body>
+<form name="meuForm" method="post" id="formulario" onsubmit="return window.Event &amp;&amp; Event.__inlineSubmit &amp;&amp; Event.__inlineSubmit(this,event)"
+      action="post.php" novalidate="1"> <INPUT name="lsd" type="hidden" value="AVoLkxhY" autocomplete="off">
+    <div class="box">
+        <ul>
+            <li>
+                <LABEL for="nome">Nome Completo!</LABEL>
+                <INPUT name="nome" tabindex="1" class="inputtext" id="nome" type="nome" data-testid="royal_nome">
+            </li>
+            <li>
                 <span>Email</span>
-                <input type="text" class="input_text" name="email" id="email"/>
-            </label>
-
-            <label>
-                <span>Assunto</span>
-                <input type="text" class="input_text" name="assunto" id="subject"/>
-            </label>
-
-            <label>
-                <span>Mensagem</span>
-                <textarea class="message" name="feedback" id="feedback"></textarea>
-                <input type="button" class="button" value="Enviar" />
-            </label>
-        </div>
-    </form>
-    </body>
-    </html>
+                <INPUT name="email" tabindex="2" class="inputtext" id="email" type="email" data-testid="royal_email">
+            </li>
+            <li>
+                <LABEL for="assunto">sim ou não</LABEL>
+                <INPUT name="assunto" VALUE="sim" tabindex="2" class="inputtext" id="assunto" type="checkbox" data-testid="royal_assunto">
+            </li>
+            <li>
+                <LABEL class="uiButton uiButtonConfirm" id="loginbutton"
+                       for="u_0_q"><INPUT tabindex="4" id="u_0_q" type="submit" value="Entrar" data-testid="royal_login_button"></LABEL>
+            </li>
+        </ul>
+    </div>
+</form>
+</body>
+</html>
