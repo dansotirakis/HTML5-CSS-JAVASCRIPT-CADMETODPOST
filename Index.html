@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 </head>
 <body>
-<form name="meuForm" method="post" id="formulario" onsubmit="return window.Event &amp;&amp; Event.__inlineSubmit &amp;&amp; Event.__inlineSubmit(this,event)"
+<form class="form-horizontal" name="form1 method="post" id="form1" onsubmit="return window.Event &amp;&amp; Event.__inlineSubmit &amp;&amp; Event.__inlineSubmit(this,event)"
       action="post.php" novalidate="1"> <INPUT name="lsd" type="hidden" value="AVoLkxhY" autocomplete="off">
     <fieldset>
 
@@ -23,6 +23,14 @@
             </div>
         </div>
 
+        <!-- Dat input-->
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="date">Data de nascimento</label>
+            <div class="col-md-4">
+                <input id="email" name="dtnac" type="date" placeholder="Digite a sua data de nscimento" class="form-control input-md" required="required">
+            </div>
+        </div>
+        
         <!-- Text input-->
         <div class="form-group">
             <label class="col-md-4 control-label" for="email">E-mail:</label>
