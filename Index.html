@@ -5,64 +5,115 @@
     <title>Cadastro</title>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="reset.css">
+	<link rel="stylesheet" href="estilos.css">
+	<link rel="stylesheet" href="mobile.css" media="(max-width: 939px)">
 </head>
-<body>
-<form class="form-horizontal" name="form1 method="post" id="form1" onsubmit="return window.Event &amp;&amp; Event.__inlineSubmit &amp;&amp; Event.__inlineSubmit(this,event)"
-      action="post.php" novalidate="1"> <INPUT name="lsd" type="hidden" value="AVoLkxhY" autocomplete="off">
+<body background="fundo.png">
+<form class="header form-horizontal container" name="form1" method="POST" id="form1" onsubmit="return window.Event &amp;&amp; Event.__inlineSubmit &amp;&amp; Event.__inlineSubmit(this,event)"
+      action="post.php" novalidate="1"> <INPUT name="lsd" type="hidden" value="Cad-Post" autocomplete="off">
     <fieldset>
+	    <div class=header">
+	        <!-- Form Name -->
+	    	<legend class="text-center header h3">CADASTRO</legend><hr>
+	    	
+	    	<!-- Text input-->
+	        <div class="header text-center form-group">
+	            <label class="header col-md-4 control-label" for="nome">Nome Completo</label>
+	            <div class="header col-md-4">
+	                <input id="nome" name="Nome:" type="text" placeholder="Digite seu nome" 
+	                class="header form-control input-md" required="">
+	            </div>
+	        </div>
 
-        <!-- Form Name -->
-        <legend class="text-center">CADASTRO</legend>
-        <p class="text-center text-uppercase">Formulário de cadastro com HTML5:</p>
+	        <!-- Sex input-->
+	        <div class="header text-center form-group">
+	            <label class=" header col-md-4 control-label" for="nome">Sexo</label>
+	            <div class="header text-center col-md-4 ">
+	            	<label class="container header col-md-4 form-group-sm " for="sexo">Feminino</label>
+					<input id="Sexo" value="Feminino" name="Sexo" type="radio" placeholder="" class="form-group-sm radio col-md-4 imput-md" required="">
+	                <label class="container header col-md-4 form-group-sm " for="sexo">Masculino</label>
+	                <input id="Sexo" value="Masculino" name="Sexo" type="radio" placeholder="" class="form-group-sm radio col-md-4 imput-md" required="">
+	                <label class="container header col-md-4 form-group-sm " for="sexo">Outros</label>
+	                <input id="Sexo" value="Outros" name="Sexo" type="radio" placeholder="" class="form-group-sm radio col-md-4 imput-md" required="">
+	            </div>
+	        </div>
 
-        <!-- Text input-->
-        <div class="form-group">
-            <label class="col-md-4 control-label" for="nome">Nome:</label>
-            <div class="col-md-4">
-                <input id="nome" name="nome" type="text" placeholder="Digite seu nome" class="form-control input-md" required="">
-            </div>
-        </div>
+	        <div class="header text-center form-group">
+	            <label class="header col-md-4 control-label" for="cidade">Cidade</label>
+	            <div class="header col-md-4">
+	               	<input id="nome" name="Ciadade:" type="text" placeholder="Digite sua cidade" class="form-control input-md" required="">
+	            </div>
+	        </div>
 
-        <!-- Dat input-->
-        <div class="form-group">
-            <label class="col-md-4 control-label" for="date">Data de nascimento</label>
-            <div class="col-md-4">
-                <input id="email" name="dtnac" type="date" placeholder="Digite a sua data de nscimento" class="form-control input-md" required="">
-            </div>
-        </div>
-        
-        <!-- Text input-->
-        <div class="form-group">
-            <label class="col-md-4 control-label" for="email">E-mail:</label>
-            <div class="col-md-4">
-                <input id="email" name="email" type="email" placeholder="Digite seu e-mail" class="form-control input-md" required="">
-            </div>
-        </div>
+	        <div class="header text-center form-group">
+	            <label class="header col-md-4 control-label" for="end">Endereço</label>
+	            <div class="col-md-4">
+	                <input id="nome" name="Endereço" type="text" placeholder="Digite seu endereço" class="form-control input-md" required="">
+	            </div>
+	        </div>
 
-        <!-- Text input-->
-        <div class="form-group">
-            <label class="col-md-4 control-label" for="senha">Senha:</label>
-            <div class="col-md-4">
-                <input id="senha" name="senha1" type="password" placeholder="Digite sua senha" class="form-control input-md" required="" onchange="form.senha2.pattern=this.value;">
-            </div>
-        </div>
+	        <div class="text-center form-group">
+	            <label class="col-md-4 control-label" for="cep">Cep</label>
+	            <div class="col-md-4">
+	                <input id="nome" name="CEP:" type="text" placeholder="Digite seu CEP" class="form-control input-md" required="">
+	            </div>
+	        </div>
 
-        <!-- Text input-->
-        <div class="form-group">
-            <label class="col-md-4 control-label" for="senha">Digite a senha novamente:</label>
-            <div class="col-md-4">
-                <input id="senha" name="senha2" type="password" placeholder="Digite sua senha novamente" class="form-control input-md" required="" oninvalid="this.setCustomValidity('Digite a mesma senha que a de cima')">
-            </div>
-        </div>
+	        <!-- Dat input-->
+	        <div class="text-center form-group">
+	            <label class="col-md-4 control-label" for="date">Data de nascimento</label>
+	            <div class="col-md-4">
+	                <input id="date" maxlength="10" name="DTNasc" type="date"  max="2006-02-18" placeholder="Digite a sua data de nascimento" class="form-control input-md" required="required">
+	            </div>
+	        </div>
+	        
+	        <!-- Text input-->
+	        <div class="text-center form-group">
+	            <label class="col-md-4 control-label" for="email">E-mail</label>
+	            <div class="col-md-4">
+	                <input id="email" name="email" type="email" placeholder="Digite seu e-mail" class="form-control input-md" required="required">
+	            </div>
+	        </div>
 
-        <!-- Button -->
-        <div class="form-group">
-            <label class="col-md-4 control-label" for="enviar"></label>
-            <div class="col-md-4">
-                <button id="enviar" name="enviar" class="btn btn-success btn-block">Enviar</button>
-            </div>
-        </div>
+	        <!-- Text input-->
+	        <div class="text-center form-group">
+	            <label class="col-md-4 control-label" for="email">Confirme o e-mail</label>
+	            <div class="col-md-4">
+	                <input id="email" name="email" type="email" placeholder="Digite seu e-mail novamente" class="form-control input-md" required="required">
+	            </div>
+	        </div>
+
+	        <!-- Text input-->    
+	        </div>
+
+	           <div class="text-center form-group">
+	            <label class="col-md-4 control-label" for="phone">Telefone para contato</label>
+	            <div class="col-md-4">
+	                <input id="nome" name="Contato:" type="number" placeholder="(91) 99999 - 9999" class="form-control input-md" required="">
+	            </div>
+	        </div>
+
+	        <!-- Text input-->    
+	        </div>
+
+	           <div class="text-center form-group">
+	            <label class="col-md-4 control-label" for="phone">Telefone para recado</label>
+	            <div class="col-md-4">
+	                <input id="nome" name="Recado:" type="number" placeholder="(91) 99999 - 9999" class="form-control input-md" required="">
+	            </div>
+	        </div>
+
+	        <!-- Button -->
+	        <div class="text-center form-group">
+	            <label class="col-md-4 control-label" for="enviar"></label>
+	            <div class="col-md-4">
+	                <button id="enviar" name="enviar" class="btn btn-success btn-block">Enviar</button>
+	            </div>
+	        </div>
+	    </div>
     </fieldset>
+
 </form>
 </body>
 </html>
